@@ -1,0 +1,17 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.25rem;
+  row-gap: 1.25rem;
+  padding: .75rem;
+  /* background-color: pink; */
+  justify-items: center;
+}
+
+@media (min-width: 600px) {
+  .board {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.8rem;
+    margin: 2.25rem 0;
+  }
+}
