@@ -1,4 +1,4 @@
-# Tenzi
+# tenzi
 A game built with Create React App
 
 Rules:
