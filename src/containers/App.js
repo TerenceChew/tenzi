@@ -175,8 +175,12 @@ export default function App() {
           Roll
         </button>
       </div>
-      {won && <Confetti width={width} height={height} />}
-      {won && <Popup won={won} handleButtonClick={handleButtonClick} currentScore={currentScore} bestScore={bestScore} />}
+      {won &&
+      <>
+        <Confetti width={width} height={height} />
+        <Popup won={won} handleButtonClick={handleButtonClick} currentScore={currentScore} bestScore={bestScore} />
+      </>
+      }
     </div>
   );
 }

@@ -2,7 +2,6 @@ import './Die.css';
 
 export default function Die(props) {
   const { id, number, isHeld, handleDieClick, won } = props;
-
   const style = isHeld ? 'held' : '';
 
   return (
