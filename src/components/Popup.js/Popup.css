@@ -8,6 +8,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.85);
+  padding: 1.25rem;
 }
 
 .popup > h2 {
