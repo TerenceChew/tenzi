@@ -1,0 +1,41 @@
+.popup {
+  min-height: 55vh;
+  width: 100vw;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.popup > h2 {
+  color: black;
+  text-shadow: 1px 1px 1px cyan, -1px -1px 1px rgb(238, 86, 238);
+  font-size: 1.75rem;
+  letter-spacing: .25rem;
+}
+
+.your-score {
+  color: yellow;
+  animation: beat .35s infinite alternate;
+  font-size: 1.35rem;
+}
+
+.best-score {
+  color: rgb(95, 255, 55);
+  font-size: 1.35rem;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.15);
+  }
+}
+
+@media (min-width: 600px) {
+  .popup > h2 {
+    font-size: 2.35rem;
+  }
+}
