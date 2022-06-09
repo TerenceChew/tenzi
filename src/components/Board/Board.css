@@ -1,7 +1,7 @@
 .board {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 3.25rem;
+  column-gap: 3.4rem;
   row-gap: 1.25rem;
   padding: .75rem;
   justify-items: center;

@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.btn-roll:active {
+.btn:active {
   transform: scale(1.035);
   background-color: #3e24e4;
 }
