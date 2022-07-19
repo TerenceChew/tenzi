@@ -6,7 +6,6 @@ import Board from '../components/Board/Board';
 import Die from '../components/Die/Die';
 import Popup from '../components/Popup.js/Popup';
 
-
 export default function App() {
   const [ time, setTime ] = useState({
     startTime: '',
@@ -127,13 +126,9 @@ export default function App() {
     // save newScore as newBestScore in local storage
     function saveBestScore() {
       const prevBestScore = localStorage.getItem('score');
-      const prevBestScoreFront = prevBestScore.split(':')[0];
-      const prevBestScoreMiddle = prevBestScore.split(':')[1];
-      const prevBestScoreEnd = prevBestScore.split(':')[2];
+      const [ prevBestScoreFront, prevBestScoreMiddle, prevBestScoreEnd ] = prevBestScore.split(':');
       const newScore = getScore();
-      const newScoreFront = newScore.split(':')[0];
-      const newScoreMiddle = newScore.split(':')[1];
-      const newScoreEnd = newScore.split(':')[2];
+      const [ newScoreFront, newScoreMiddle, newScoreEnd ] = newScore.split(':');
       let newBestScore;
 
       if (newScoreFront <= prevBestScoreFront && newScoreMiddle <= prevBestScoreMiddle && newScoreEnd < prevBestScoreEnd) {
