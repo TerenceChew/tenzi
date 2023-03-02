@@ -1,6 +1,7 @@
 # Tenzi
 
 A game built with Create React App
+
 [Live Demo](https://terencechew.github.io/tenzi/) :point_left:
 
 ## Rules:
